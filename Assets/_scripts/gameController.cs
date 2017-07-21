@@ -11,7 +11,7 @@ public class gameController : MonoBehaviour {
 	private float price = 30;
 
 	private float timeCounter = 0;
-	private float timeLimit = 0.75f;
+	private float timeLimit = 1.25f;
 
 	// Use this for initialization
 	void Start () {
@@ -24,13 +24,13 @@ public class gameController : MonoBehaviour {
 		priceObj.price = 30;
 
 		// Set a random seed
-		Random.InitState ((int)Mathf.Ceil(Time.time));
+		Random.InitState ((int)Mathf.Ceil(Random.Range(0,100)));
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (timeCounter > timeLimit) {
-			price = Random.Range (price - 5, price + 10);
+			price = Random.Range (price - 5, price + 5);
 			priceText.text = "$" + price;
 			priceObj.previousPrice = priceObj.price;
 			priceObj.price = price;

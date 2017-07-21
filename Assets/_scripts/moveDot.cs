@@ -8,7 +8,7 @@ public class moveDot : MonoBehaviour {
 	private currentPrice priceObj;
 
 	private float timeCounter = 0;
-	private float timeLimit = 0.75f;
+	private float timeLimit = 1.25f;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,7 @@ public class moveDot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (timeCounter > timeLimit) {
-			rb2d.AddForce (new Vector2 (0,priceObj.price-priceObj.previousPrice));
+			rb2d.AddForce (new Vector2 (0,(priceObj.price-priceObj.previousPrice)*2));
 			timeCounter = 0;
 		}
 		timeCounter += Time.deltaTime;
