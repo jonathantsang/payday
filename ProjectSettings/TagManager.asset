@@ -4,13 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - moneyShown
   - price
   - stock
   - cash
   - buy
   - sell
   - data
+  - worth
   layers:
   - Default
   - TransparentFX

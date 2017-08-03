@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour {
 	public static GameController instance;
 
 	// The text components of the game
-	private Text moneyShown;
+	private Text worthText;
 	private Text priceText;
 	private Text stockText;
 	private Text cashText;
@@ -26,8 +26,8 @@ public class GameController : MonoBehaviour {
 		data = GameObject.FindGameObjectWithTag("data").GetComponent<currentPrice>();
 
 		// Init text
-		moneyShown = GameObject.FindGameObjectWithTag ("moneyShown").GetComponent<Text>();
-		moneyShown.text = "$0";
+		worthText = GameObject.FindGameObjectWithTag ("worth").GetComponent<Text>();
+		worthText.text = "$ 200";
 		priceText = GameObject.FindGameObjectWithTag ("price").GetComponent<Text>();
 		priceText.text = "Price: $" + data.price;
 		stockText = GameObject.FindGameObjectWithTag ("stock").GetComponent<Text>();
@@ -43,7 +43,8 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		// Update the price
 		if (timeCounter > timeLimit) {
-			priceText.text = "Price: $" + data.price;
+			updateAmounts ();
+			data.updateWorth ();
 			timeCounter = 0;
 		}
 		timeCounter += Time.deltaTime;
@@ -51,9 +52,10 @@ public class GameController : MonoBehaviour {
 
 	public void updateAmounts(){
 		priceText.text = "Price: $" + data.price;
-		moneyShown.text = "$0";
+		worthText.text = "$0";
 		stockText.text = "Stock: " + data.stock;
 		cashText.text = "Cash: $" + data.cash;
+		worthText.text = "$ " + data.worth;
 	}
 
 	void init(){

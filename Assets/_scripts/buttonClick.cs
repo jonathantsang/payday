@@ -29,6 +29,7 @@ public class buttonClick : MonoBehaviour {
 				cP.cash -= cP.price;
 				// Increase stock
 				cP.stock += 1;
+				cP.updateWorth ();
 				GC.updateAmounts ();
 			}
 		} else if (type == "sell") {
@@ -38,6 +39,7 @@ public class buttonClick : MonoBehaviour {
 				cP.cash += cP.price;
 				// Subtract stock
 				cP.stock -= 1;
+				cP.updateWorth ();
 				GC.updateAmounts ();
 			}
 		}

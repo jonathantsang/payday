@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114364905115220022}
   m_Layer: 5
   m_Name: worth
-  m_TagString: moneyShown
+  m_TagString: worth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

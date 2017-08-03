@@ -55,6 +55,7 @@
      <Compile Include="Assets\_scripts\currentPrice.cs" />
      <Compile Include="Assets\_scripts\GameController.cs" />
      <Compile Include="Assets\_scripts\grapher1.cs" />
+     <None Include="Assets\_audio\The Essential Retro Video Game Sound Effects Collection [512 sounds] By Juhani Junkala\INFO.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

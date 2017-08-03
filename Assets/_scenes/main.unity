@@ -266,6 +266,7 @@ MonoBehaviour:
   price: 30
   stock: 0
   cash: 200
+  worth: 200
 --- !u!1 &665830512
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +588,7 @@ MonoBehaviour:
   price: 30
   stock: 0
   cash: 200
+  worth: 200
 --- !u!1 &911485223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1133,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746777527374038, guid: ef9e2d3beeb5345cf9aa6108c033bfb2, type: 2}
+      propertyPath: m_TagString
+      value: worth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef9e2d3beeb5345cf9aa6108c033bfb2, type: 2}

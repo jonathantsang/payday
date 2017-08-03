@@ -12,6 +12,8 @@ public class currentPrice : MonoBehaviour {
 	public float stock = 0;
 	[HideInInspector]
 	public float cash = 200;
+	[HideInInspector]
+	public float worth = 200;
 
 	private float timeCounter = 0;
 	private float timeLimit = 3f;
@@ -30,5 +32,9 @@ public class currentPrice : MonoBehaviour {
 			print (price);
 		}
 		timeCounter += Time.deltaTime;
+	}
+
+	public void updateWorth(){
+		worth = price * stock + cash;
 	}
 }
