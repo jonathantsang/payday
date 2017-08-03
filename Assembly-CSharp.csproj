@@ -51,10 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_scripts\buttonClick.cs" />
      <Compile Include="Assets\_scripts\currentPrice.cs" />
-     <Compile Include="Assets\_scripts\gameController.cs" />
+     <Compile Include="Assets\_scripts\GameController.cs" />
      <Compile Include="Assets\_scripts\grapher1.cs" />
-     <Compile Include="Assets\_scripts\moveDot.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

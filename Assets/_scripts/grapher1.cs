@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class grapher1 : MonoBehaviour {
 
+	[Range(10, 100)]
 	public int resolution = 10;
 
-	private int currentResolution = 10;
+	private int currentResolution;
 	private ParticleSystem.Particle[] points;
 	private ParticleSystem PS;
 
@@ -32,6 +33,17 @@ public class grapher1 : MonoBehaviour {
 	}
 	
 	void Update () {
+		if (currentResolution != resolution) {
+			CreatePoints();
+		}
+		for (int i = 0; i < resolution; i++) {
+			Vector3 p = points[i].position;
+			p.y = p.x;
+			points[i].position = p;
+			Color c = points[i].startColor;
+			c.g = p.y;
+			points[i].startColor = c;
+		}
 		PS.SetParticles(points, points.Length);
 	}
 }

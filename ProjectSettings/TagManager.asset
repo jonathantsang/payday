@@ -6,7 +6,11 @@ TagManager:
   tags:
   - moneyShown
   - price
-  - dot
+  - stock
+  - cash
+  - buy
+  - sell
+  - data
   layers:
   - Default
   - TransparentFX
