@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_scenes/job.unity
+    guid: e3e9edbc793254180952daae7a0fb048
+  - enabled: 1
+    path: Assets/_scenes/payday.unity
+    guid: 43550c2921c934f50961f36d170fbfe5

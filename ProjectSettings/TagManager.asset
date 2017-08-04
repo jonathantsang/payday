@@ -11,6 +11,10 @@ TagManager:
   - sell
   - data
   - worth
+  - textController
+  - date
+  - grid
+  - selector
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -45,6 +49,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 2950517205
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
